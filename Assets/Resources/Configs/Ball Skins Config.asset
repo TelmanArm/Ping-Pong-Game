@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2c444d37b142768cea0168e098d145, type: 3}
+  m_Name: Ball Skins Config
+  m_EditorClassIdentifier: 
+  ballSkins:
+  - key: skin_1
+    unlockLevel: 1
+    color: {r: 1, g: 0, b: 0, a: 1}
+  - key: skin_2
+    unlockLevel: 2
+    color: {r: 0.2709533, g: 1, b: 0, a: 1}
+  - key: skin_3
+    unlockLevel: 3
+    color: {r: 1, g: 0.68598413, b: 0, a: 1}
+  - key: skin_4
+    unlockLevel: 4
+    color: {r: 0, g: 0.6974547, b: 1, a: 1}
