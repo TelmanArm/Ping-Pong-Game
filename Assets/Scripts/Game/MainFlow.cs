@@ -18,7 +18,7 @@ public class MainFlow
 
     public void ShowMainView()
     {
-        _facade.ViewService.Show<MainView>(new MainView.Data(this, _facade.ScoreService));
+        _facade.ViewService.Show<MainView>(new MainView.Data(this, _facade.ScoreService, _facade.GameData));
     }
 
     public void StartGame()
@@ -56,7 +56,7 @@ public class MainFlow
         _facade.ScoreService.ResetScore();
         Object.Destroy(_gameplayController.gameObject);
         _facade.ViewService.CloseLast();
-        _facade.ViewService.Show<MainView>(new MainView.Data(this, _facade.ScoreService));
+        _facade.ViewService.Show<MainView>(new MainView.Data(this, _facade.ScoreService,_facade.GameData));
     }
 
     public void ShowSkinView()
