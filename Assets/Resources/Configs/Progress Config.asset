@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4aa7fbc301df45b6bfa6942331db6d2c, type: 3}
   m_Name: Progress Config
   m_EditorClassIdentifier: 
-  firstLevelProgress: 20
-  addProgressEachLevel: 10
+  firstLevelProgress: 100
+  addProgressEachLevel: 50
