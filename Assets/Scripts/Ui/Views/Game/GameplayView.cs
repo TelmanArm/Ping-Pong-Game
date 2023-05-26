@@ -26,7 +26,7 @@ namespace Ui.Views.Game
             SetScore(_data.ScoreService.Score);
             SetHighScore(_data.ScoreService.HighScore);
             progressBarImage.fillAmount = 0;
-           
+            _levelGolScore = _data.ProgressService.GetCurrentLevelGol();
             currentLevelText.text = $"L{_data.GameData.level}";
             _isCompleted = false;
             _data.ScoreService.OnScoreChanged += SetScore;
@@ -35,8 +35,7 @@ namespace Ui.Views.Game
 
         private void SetScore(int score)
         {
-            _levelGolScore = _data.ProgressService.GetCurrentLevelGol();
-            if (score == 0) return;
+            if (_levelGolScore == 0) return;
             if (score >= _levelGolScore & !_isCompleted)
             {
                 _data.ProgressService.GolCompleted();
